@@ -3,9 +3,6 @@
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   height:100vh;
-  /* display:flex;
-  flex-direction:column; */
-  /* line-height: 20px; */
 }
 .page--filtering{
   min-height: 100vh;
@@ -36,7 +33,7 @@ body {
 
 /* ---- button ---- */
 .container{
-margin-left: 50px;
+/* margin-left: 50px; */
 }
 .container-index{
 margin-left: 0px;
@@ -163,12 +160,12 @@ min-height:calc(100vh - 80px);
 .grid-item img {
   display: block;
   max-width: 100%;
-  border: 10px solid white;
+  border: 5px solid white;
 }
 .grid-item video {
   display: block;
   max-width: 100%;
-  border: 10px solid white;
+  border: 5px solid white;
 }
 @media screen and (max-width: 414px) {
   .grid-item img {
@@ -184,7 +181,57 @@ min-height:calc(100vh - 80px);
   z-index: 2;
 }
 
+/* HEADER */
+.hero.is-light{
+  background-color: white;
+  width: calc(100% - 50px);
+float: right;
+}
+.hero.is-light .title{
+  color:black;
+}
+.hero.is-medium .hero-body{
+  padding:0;
+}
+.hero-body{
+  padding:0;
+}
 
+/* BUTTONS */
+/* .hero.is-light .tabs.is-boxed li.is-active a, .hero.is-light .tabs.is-boxed li.is-active a:hover, .hero.is-light .tabs.is-toggle li.is-active a, .hero.is-light .tabs.is-toggle li.is-active a:hover{
+  color:white;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.hero-foot, .hero-head{
+  background-color:white;
+  border-bottom: 1px solid black;
+  padding-bottom:10px;
+  padding-top:10px;
+  margin-bottom:5px;
+}
+
+.hero.is-light .tabs.is-boxed a:hover, .hero.is-light .tabs.is-toggle a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.hero.is-light .tabs.is-boxed a, .hero.is-light .tabs.is-toggle a{
+  color:black;
+  font-size: 12px;
+}
+.tabs.is-boxed a{
+  border-radius: 20px;
+  border: 1px solid black;
+  padding-bottom:3px;
+  padding-top:3px;
+  margin:0;
+  margin-right:3px;
+} */
+/* .tabs a{
+  color:black;
+} */
 
 
 /* ---- isotope ---- */
@@ -495,7 +542,14 @@ p2#about::-webkit-scrollbar {
 }
 ul {
   list-style: none;
-  line-height: 30px;
+  padding-left:0;
+  border-bottom:1px solid black;
+  padding-bottom:5px;
+  padding-top:10px;
+  margin-bottom:5px;
+  margin-top:0;
+
+  /* line-height: 30px; */
 
 }
 
@@ -532,10 +586,11 @@ float:right;
 }
 .text {
 /* padding-top:5px; */
-padding-left:10px;
+padding-left:5px;
 padding-right:10px;
 color: rgba(0, 0, 0, 0.2);
 font-size: 12px;
+padding-bottom:5px;
 
 }
 

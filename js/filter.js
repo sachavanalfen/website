@@ -5,9 +5,9 @@ var imgAll = document.querySelectorAll('.grid-item');
 var imgCoding = document.querySelectorAll('.coding');
 var imgEditorial = document.querySelectorAll('.editorial');
 var imgIllustration = document.querySelectorAll('.illustration');
-var imgInstallation = document.querySelectorAll('.installation');
-var imgPoster = document.querySelectorAll('.poster');
-var imgTextile = document.querySelectorAll('.textile');
+// var imgInstallation = document.querySelectorAll('.installation');
+// var imgPoster = document.querySelectorAll('.poster');
+// var imgTextile = document.querySelectorAll('.textile');
 // buttons
 const tabsUl = document.getElementById('buttonGroup');
 const lis = tabsUl.children;
@@ -61,28 +61,28 @@ tabsUl.addEventListener('click', (event) =>{
 	}
 
 	if(event.target.id == "coding"){
-		showImages(imgCoding, imgEditorial, imgIllustration, imgInstallation, imgPoster, imgTextile);
+		showImages(imgCoding, imgEditorial, imgIllustration);
 	}
 
 	if(event.target.id == "editorial"){
-		showImages(imgEditorial, imgIllustration, imgInstallation, imgPoster, imgTextile, imgCoding);
+		showImages(imgEditorial, imgIllustration, imgCoding);
 	}
 
 	if(event.target.id == "illustration"){
-		showImages(imgIllustration, imgInstallation, imgPoster, imgTextile, imgCoding, imgEditorial);
+		showImages(imgIllustration, imgCoding, imgEditorial);
 	}
-
-	if(event.target.id == "installation"){
-		showImages(imgInstallation, imgPoster, imgTextile, imgCoding, imgEditorial, imgIllustration);
-	}
-
-	if(event.target.id == "poster"){
-		showImages(imgPoster, imgTextile, imgCoding, imgEditorial, imgIllustration, imgInstallation);
-	}
-
-	if(event.target.id == "textile"){
-		showImages(imgTextile, imgCoding, imgEditorial, imgIllustration, imgInstallation, imgPoster);
-	}
+	//
+	// if(event.target.id == "installation"){
+	// 	showImages(imgInstallation, imgPoster, imgTextile, imgCoding, imgEditorial, imgIllustration);
+	// }
+	//
+	// if(event.target.id == "poster"){
+	// 	showImages(imgPoster, imgTextile, imgCoding, imgEditorial, imgIllustration, imgInstallation);
+	// }
+	//
+	// if(event.target.id == "textile"){
+	// 	showImages(imgTextile, imgCoding, imgEditorial, imgIllustration, imgInstallation, imgPoster);
+	// }
 
 	msnry.layout();
 
