@@ -1,3 +1,23 @@
+// SLIDING DOOR ANIMATION
+
+
+// $("#left-door").click(function(){
+//   if ( $(this).hasClass("isOpen") ) {
+//     $(this).animate({
+//       left: '-300px'
+//     });
+//   } else {
+//     $(this).animate({
+//       left: '0'
+//     });
+//   }
+//   $(this).toggleClass("isOpen");
+// });
+
+
+// FILTERING
+
+
 var grid = document.querySelector('.grid');
 var msnry;
 // element selectors
@@ -71,18 +91,7 @@ tabsUl.addEventListener('click', (event) =>{
 	if(event.target.id == "illustration"){
 		showImages(imgIllustration, imgCoding, imgEditorial);
 	}
-	//
-	// if(event.target.id == "installation"){
-	// 	showImages(imgInstallation, imgPoster, imgTextile, imgCoding, imgEditorial, imgIllustration);
-	// }
-	//
-	// if(event.target.id == "poster"){
-	// 	showImages(imgPoster, imgTextile, imgCoding, imgEditorial, imgIllustration, imgInstallation);
-	// }
-	//
-	// if(event.target.id == "textile"){
-	// 	showImages(imgTextile, imgCoding, imgEditorial, imgIllustration, imgInstallation, imgPoster);
-	// }
+
 
 	msnry.layout();
 

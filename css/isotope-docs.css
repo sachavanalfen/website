@@ -28,12 +28,13 @@ body {
 .info-project{
   padding: 10px 0px;
   border-bottom: 1px solid black;
+  margin-bottom: 5px;
 }
 
 
 /* ---- button ---- */
 .container{
-/* margin-left: 50px; */
+margin-left: 50px;
 }
 .container-index{
 margin-left: 0px;
@@ -46,8 +47,15 @@ min-height:calc(100vh - 80px);
 
 .container h2{
   color: black;
-  /* margin-bottom: 5px;
-  margin-top: 5px; */
+  font-size: 25px;
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin:0;
+}
+.container2 h2{
+  color: black;
   font-size: 25px;
   text-align: left;
   font-weight: normal;
@@ -175,6 +183,14 @@ min-height:calc(100vh - 80px);
     border: 5px solid white;
   }
 }
+
+@media screen and (max-width: 786px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+
 
 .grid-item.grid-item__expanded {
   width: 66.66%;
@@ -386,7 +402,7 @@ font-size: 12px;
   padding-left: 5px;
   padding-bottom: 10px;
   border-top: 1px solid black;
-  margin-top:auto;
+  margin-top:10px;
 }
 #content-wrap p3{
   line-height: 200%;
@@ -572,10 +588,7 @@ a{
   color:black;
   text-decoration:none;
 }
-a:hover{
-  /* color: rgb(255, 79, 251); */
-  background-color: rgba(0, 0, 0, 0.2);
-}
+
 a:active{
   /* color: rgb(255, 79, 251); */
   background-color: rgba(0, 0, 0, 0.2);
