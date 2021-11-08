@@ -22,20 +22,28 @@
   <div id="content" class="main">
     <div class="container-index">
       <a href="filtering.html">
-        <h2>Sacha van Alfen</h2>
-        <!-- <span>projects</span> -->
-        <!-- <h3>M &#9776;</h3> -->
-
-</a>
+        <h2>Sacha van Alfen<p>Work</p></h2></a>
 
 
 
-<!-- <div class="about">
-“Play”, as Johan Huizinga once said, “is a serious matter”. Scientists have been documenting clear signs of a warming planet: the highest amounts of greenhouse gases in our atmosphere, the highest global surface and sea surface temperatures on record, extremes rain and snow amounts, and rising sea levels. The world is experiencing unique impacts of climate change. This is a game with the aim to give people more knowledge about the ecological footprint of animal agriculture.</div>
-<div class="big-demo go-wide" data-js="filtering-demo">
-</div> -->
+<!-- <div class="S1"><p>S</p></div>
+<div class="S2"><p>V</p></div>
+<div class="S3"><p>A</p></div> -->
 
-  <div class="grid">
+<div class="random-pane">
+
+      <div class="grid-item">
+        S
+      </div>
+      <div class="grid-item">
+        V
+      </div>
+      <div class="grid-item">
+        A
+      </div>
+  </div>
+
+  <!-- <div class="grid">
 
       <div id="slider">
         <ul id="slideWrap">
@@ -49,23 +57,62 @@
       </div>
 
 </div>
-  </div>
+  </div> -->
+
+
+
+  <!-- TEST -->
+  <!-- <div class="main-container">
+
+      <div class="content_container">
+
+        <div class="mySlides fade" style="display: block;">
+            <img class="cover" src="img crop/img3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade" style="display: none;">
+            <img class="cover" src="img crop/img4.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade" style="display: none;">
+            <img class="cover" src="img crop/img5.jpg" style="width:100%">
+          </div>
+
+      </div>
+
+      <div class="text_container">
+
+          <div class="mySlides2 fade" style="display: none;">
+            <img class="cover" src="img crop/img6.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides2 fade" style="display: block;">
+            <img class="cover" src="img crop/img7.jpg" style="width:100%">
+          </div>
+
+
+        </div>
+
+
+      <div class="slide_container">
+
+
+          <div class="mySlides3 fade" style="display: none;">
+            <img class="cover" src="img crop/img8.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides3 fade" style="display: block;">
+            <img class="cover" src="img crop/img9.jpg" style="width:100%">
+          </div>
+
+      </div>
+
+    </div> -->
 
 
 
 
-  <div id="page-container-2">
-    <div id="content-wrap-2">
-        <a href="mailto:sachavanalfen@gmail.com">sachavanalfen@gmail.com</a><br>
-        +31 (0)6 12942047<br>
-        <a href="https://www.instagram.com/sachavanalfen/" target="_blank">@sachavanalfen</a>
-        <br>
-        MT. Lincolnweg 14H6<br>
-        1033 SN, Amsterdam<br>
-        The Netherlands<br>
-    </div>
-    <footer id="footer"></footer>
-  </div>
+
 
 
 <!-- CV -->
@@ -73,6 +120,19 @@
 
 </div>
 
+
+<div id="page-container-2">
+  <div id="content-wrap-2">
+      <a href="mailto:sachavanalfen@gmail.com">sachavanalfen@gmail.com</a><br>
+      +31 (0)6 12942047<br>
+      <a href="https://www.instagram.com/sachavanalfen/" target="_blank">@sachavanalfen</a>
+      <br>
+      MT. Lincolnweg 14H6<br>
+      1033 SN, Amsterdam<br>
+      The Netherlands<br>
+  </div>
+  <footer id="footer"></footer>
+</div>
 
 <!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
 <!-- Isotope does NOT require jQuery. But it does make things easier -->
@@ -158,8 +218,32 @@ window.onload = function() {
 responsiveSlider();
 }
 
+var pane_width = $(".random-pane").width() - $(".grid-item").width();
+var pane_height = $(".random-pane").height() - $(".grid-item").height();
+
+// loop through all the items in the random-pane
+$(".random-pane").children().each( function(){
+
+  // get a random x position
+  var x = Math.round(Math.random() * pane_width);
+  // get a random y position
+  var y =  Math.round(Math.random() * pane_height);
+
+  // change the position of the item
+  $(this).css("top",y);
+  $(this).css("left",x);
+
+  // add hover functionality, to move item to the top on hover
+  $(this).on("mouseover",function(){
+    // this is a small hack, removing it and adding it again moves it to the top
+    $(this).parent().append(this);
+  });
+
+});
+
 
 </script>
+
 
 </body>
 </html>

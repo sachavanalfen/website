@@ -1,19 +1,3 @@
-// SLIDING DOOR ANIMATION
-
-
-// $("#left-door").click(function(){
-//   if ( $(this).hasClass("isOpen") ) {
-//     $(this).animate({
-//       left: '-300px'
-//     });
-//   } else {
-//     $(this).animate({
-//       left: '0'
-//     });
-//   }
-//   $(this).toggleClass("isOpen");
-// });
-
 
 // FILTERING
 
@@ -21,7 +5,7 @@
 var grid = document.querySelector('.grid');
 var msnry;
 // element selectors
-var imgAll = document.querySelectorAll('.grid-item');
+var imgAll = document.querySelectorAll('.grid-item2');
 var imgCoding = document.querySelectorAll('.coding');
 var imgEditorial = document.querySelectorAll('.editorial');
 var imgIllustration = document.querySelectorAll('.illustration');
@@ -37,8 +21,8 @@ const gridItems = grid.children;
 imagesLoaded(grid, function(){
 	msnry = new Masonry( grid, {
 		//options
-		itemSelector: '.grid-item',
-		columnWidth: '.grid-sizer',
+		itemSelector: '.grid-item2',
+		columnWidth: '.grid-sizer2',
 		percentPosition: true
 	});
 });
@@ -102,3 +86,21 @@ grid.addEventListener('click',function(event){
 	toggleClass(imgContainer, gridItems, 'grid-item__expanded');
 	msnry.layout();
 });
+
+
+// SLIDING DOOR ANIMATION
+
+
+
+// $("#left-door").click(function(){
+//   if ( $(this).hasClass("isOpen") ) {
+//     $(this).animate({
+//       left: '-300px'
+//     });
+//   } else {
+//     $(this).animate({
+//       left: '0'
+//     });
+//   }
+//   $(this).toggleClass("isOpen");
+// });
