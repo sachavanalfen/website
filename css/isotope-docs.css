@@ -71,7 +71,7 @@ min-height:calc(100vh - 90px);
   padding-bottom: 5px;
   margin:0;
 }
-.container-index p{
+.container-index p1{
 float:right;
 margin:0;
 z-index: 999;
@@ -82,6 +82,12 @@ z-index: 999;
   font-weight: normal;
   padding-bottom: 5px;
   float:right;
+}
+.container-index h2:hover {
+  text-decoration: underline;
+}
+.container-index p1:hover {
+  text-decoration: underline;
 }
 a:hover {
   text-decoration: underline;
@@ -310,13 +316,10 @@ float: right;
 
 /* ---- .element-item ---- */
 
-.element-item {
+/* .element-item {
   position: relative;
-  /* border: 1px solid black; */
   width: 50%;
   height: auto;
-  /* margin-left: -1px;
-  margin-top: -1px; */
   padding: 5px;
   background: white;
 }
@@ -338,7 +341,7 @@ float: right;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* CHANGE IMG ON HOVER */
 
@@ -400,7 +403,7 @@ display: inline;
 color: rgba(0, 0, 0, 0.2);
 font-size: 12px;
 }
-
+/*
 .extra {
   display: inline-block;
   padding: 10px 18px;
@@ -415,7 +418,7 @@ font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 
   display:none;
-}
+} */
 
 
 
@@ -615,8 +618,6 @@ ul {
 }
 
 .close-button {
-	/* width: 20px;
-	height: 20px; */
   padding:10px;
 	position: absolute;
 	right: 5px;
@@ -712,22 +713,30 @@ padding-bottom:5px;
 
 .random-pane {
   vertical-align: top;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 90px);
   width: 100vw;
   /* background-color: blue; */
 }
-
-.grid-item {
+.random-item {
   position: absolute;
-  padding: 5px;
-  margin: 5px;
-  /* width: 200px;
-  height: 200px; */
-  /* border: 1px solid black;
-  background-color: white; */
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: white;
   display: inline-block;
   font-size:160px;
+  padding: 5px 0;
+  text-align: center;
 }
+.random-item p{
+margin:0;
+}
+/* .grid-item p{
+  font-size:160px;
+  padding: 5px 0;
+  text-align: center;
+} */
 
 /* .main-container {
     display: grid;
@@ -855,33 +864,6 @@ padding-bottom:5px;
 }
 
 
-/* INDEX */
-/* .S1 p{
-  position:absolute;
-  font-size:160px;
-  top:30%;
-  right:0;
-  margin:0;
-}
-.S2 p{
-  position:absolute;
-  font-size:160px;
-  left:0;
-  top:50%;
-  margin:0;
-}
-.S3 p{
-  position:absolute;
-  font-size:160px;
-  right:0;
-  bottom:0;
-  margin:0;
-} */
-
-
-
-
-
 @media only screen and (min-width: 1050px){
 #content-wrap{
   column-count: 3;
@@ -890,6 +872,9 @@ padding-bottom:5px;
 @media only screen and (min-width: 1024px){
 .work-title{
   border-bottom:1px solid black;
+}
+.info-project{
+  border-bottom:none;
 }
 }
 @media only screen and (max-width: 1050px){
