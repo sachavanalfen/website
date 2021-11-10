@@ -135,28 +135,9 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-  <script src="js/isotope-docs.min.js?6"></script>
+  <script src="js/index.js"></script>
 
-<script>
-
-
-$("#left-door").click(function(){
-  if ( $(this).hasClass("isOpen") ) {
-    $(this).animate({
-      left: '-300px'
-    });
-  } else {
-    $(this).animate({
-      left: '0'
-    });
-  }
-  $(this).toggleClass("isOpen");
-});
-
-
-
-// SLIDER
-
+<!-- <script>
 
 var responsiveSlider = function() {
 
@@ -214,31 +195,7 @@ window.onload = function() {
 responsiveSlider();
 }
 
-var pane_width = $(".random-pane").width() - $(".random-item").width();
-var pane_height = $(".random-pane").height() - $(".random-item").height();
-
-// loop through all the items in the random-pane
-$(".random-pane").children().each( function(){
-
-  // get a random x position
-  var x = Math.round(Math.random() * pane_width);
-  // get a random y position
-  var y =  Math.round(Math.random() * pane_height);
-
-  // change the position of the item
-  $(this).css("top",y);
-  $(this).css("left",x);
-
-  // add hover functionality, to move item to the top on hover
-  $(this).on("mouseover",function(){
-    // this is a small hack, removing it and adding it again moves it to the top
-    $(this).parent().append(this);
-  });
-
-});
-
-
-</script>
+</script> -->
 
 
 </body>

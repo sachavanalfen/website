@@ -92,15 +92,28 @@ grid.addEventListener('click',function(event){
 
 
 
-// $("#left-door").click(function(){
-//   if ( $(this).hasClass("isOpen") ) {
-//     $(this).animate({
-//       left: '-300px'
-//     });
-//   } else {
-//     $(this).animate({
-//       left: '0'
-//     });
-//   }
-//   $(this).toggleClass("isOpen");
-// });
+$(".sliding-panel").click(function(){
+  if ( $(this).hasClass("isOpen") ) {
+    $(this).animate({
+      right: '-300px'
+    });
+  } else {
+    $(this).animate({
+      right: '0'
+    });
+  }
+  $(this).toggleClass("isOpen");
+});
+
+$(".about-menu").click(function(){
+  if ( $(".sliding-panel").hasClass("isOpen") ) {
+    $(".sliding-panel").animate({
+      right: '-300px'
+    });
+  } else {
+    $(".sliding-panel").animate({
+      right: '0'
+    });
+  }
+  $(".sliding-panel").toggleClass("isOpen");
+});

@@ -1,6 +1,6 @@
 // get width & height of random pane
-var pane_width = $(".random-pane").width() - $(".stamp").width();
-var pane_height = $(".random-pane").height() - $(".stamp").height();
+var pane_width = $(".random-pane").width() - $(".random-item").width();
+var pane_height = $(".random-pane").height() - $(".random-item").height();
 
 // loop through all the items in the random-pane
 $(".random-pane").children().each( function(){
@@ -22,16 +22,31 @@ $(".random-pane").children().each( function(){
 
 });
 
+// SLIDING DOOR
 
-$("#left-door").click(function(){
+
+$(".sliding-panel").click(function(){
   if ( $(this).hasClass("isOpen") ) {
     $(this).animate({
-      left: '-300px'
+      right: '-300px'
     });
   } else {
     $(this).animate({
-      left: '0'
+      right: '0'
     });
   }
   $(this).toggleClass("isOpen");
+});
+
+$(".about-menu").click(function(){
+  if ( $(".sliding-panel").hasClass("isOpen") ) {
+    $(".sliding-panel").animate({
+      right: '-300px'
+    });
+  } else {
+    $(".sliding-panel").animate({
+      right: '0'
+    });
+  }
+  $(".sliding-panel").toggleClass("isOpen");
 });

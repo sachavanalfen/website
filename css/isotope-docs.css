@@ -6,6 +6,7 @@ body {
 }
 .page--filtering{
   min-height: 100vh;
+  width: calc(100% - 16px);
 }
 
 .info {
@@ -39,7 +40,7 @@ body {
 .container-index{
 margin-left: 0px;
 /* min-height:100vh; */
-min-height:calc(100vh - 90px);
+/* min-height:calc(100vh - 90px); */
 }
 .big-demo.go-wide{
   min-height:calc(100vh - 120px);
@@ -772,33 +773,29 @@ padding-bottom:5px;
 .random-pane {
   vertical-align: top;
   height: calc(100vh - 95px);
-  width: 100vw;
   top: 50px;
-  /* background-color: blue; */
 }
 .random-item {
   position: absolute;
-  margin: auto;
+  margin: 20px;
   width: 200px;
   height: 200px;
   /* border: 1px solid black; */
   background-color: white;
   display: inline-block;
-  font-size:160px;
-  text-align: center;
-  object-fit: cover;
+  /* font-size:160px; */
+  /* text-align: center; */
+  /* object-fit: cover; */
 }
 .random-item img {
-  /* position: absolute;
-  margin: auto; */
   width: 200px;
   height: 200px;
-  /* display: inline-block; */
-object-fit: cover;
+  object-fit: cover;
 }
-.random-item p{
+/* .random-item p{
 margin:0;
-}
+} */
+
 /* .grid-item p{
   font-size:160px;
   padding: 5px 0;

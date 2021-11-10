@@ -193,41 +193,10 @@ CONTACT<br>
       </div>
 
 
-<!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
-<!-- Isotope does NOT require jQuery. But it does make things easier -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-
-  <script src="js/isotope-docs.min.js?6"></script>
-
-<script>
-
-$(".sliding-panel").click(function(){
-  if ( $(this).hasClass("isOpen") ) {
-    $(this).animate({
-      right: '-300px'
-    });
-  } else {
-    $(this).animate({
-      right: '0'
-    });
-  }
-  $(this).toggleClass("isOpen");
-});
-
-$(".about-menu").click(function(){
-  if ( $(".sliding-panel").hasClass("isOpen") ) {
-    $(".sliding-panel").animate({
-      right: '-300px'
-    });
-  } else {
-    $(".sliding-panel").animate({
-      right: '0'
-    });
-  }
-  $(".sliding-panel").toggleClass("isOpen");
-});
-</script>
+      <script src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'></script>
+      <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+      <script src="js/index.js"></script>
 
 </body>
 </html>

@@ -84,25 +84,24 @@
     </div>
 
 <!-- SLIDING DOOR -->
+
 <div class="about-menu">
-        <p2>About</p2></div>
-
-    <div id="left-door" class="sliding-panel">
+<p2>About</p2></div>
 
 
-
+<div id="left-door" class="sliding-panel">
 <div class="aboutme">
-        <p2>
-          ABOUT<br>
-          <br>
-          Hi! My name is Sacha van Alfen.<br>
-          I am a Graphic Designer who recently graduated from the Royal Academy of Arts with a great interest in (motion) typography, print and coding. I like to work digital as much as I like to work with print. Projects I work on vary from a chatbot about the two faces of nostalgia, a website about a stamp collection published in Iran during the Iran - Iraq war, a publication about the importance of the bee, a game about the ecological footprint of animal agricult and more.
+<p2>
+ABOUT<br>
+<br>
+Hi! My name is Sacha van Alfen.<br>
+I am a Graphic Designer who recently graduated from the Royal Academy of Arts with a great interest in (motion) typography, print and coding. I like to work digital as much as I like to work with print. Projects I work on vary from a chatbot about the two faces of nostalgia, a website about a stamp collection published in Iran during the Iran - Iraq war, a publication about the importance of the bee, a game about the ecological footprint of animal agricult and more.
 </p2>
 </div>
 <div class="contact">
   <p2>
-          CONTACT<br>
-          <br>
+CONTACT<br>
+<br>
     Sacha van Alfen<br>
     <a href="mailto:sachavanalfen@gmail.com">sachavanalfen@gmail.com</a><br>
     +31 (0)6 12942047<br>
@@ -114,7 +113,7 @@
           </p2>
   </div>
   <div class="cv">
-    <p2>
+          <p2>
           CV<br>
           <br>
           EDUCATION<br>
@@ -210,35 +209,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
 <script src="js/filter.js"></script>
-
-<script>
-$(".sliding-panel").click(function(){
-  if ( $(this).hasClass("isOpen") ) {
-    $(this).animate({
-      right: '-300px'
-    });
-  } else {
-    $(this).animate({
-      right: '0'
-    });
-  }
-  $(this).toggleClass("isOpen");
-});
-
-$(".about-menu").click(function(){
-  if ( $(".sliding-panel").hasClass("isOpen") ) {
-    $(".sliding-panel").animate({
-      right: '-300px'
-    });
-  } else {
-    $(".sliding-panel").animate({
-      right: '0'
-    });
-  }
-  $(".sliding-panel").toggleClass("isOpen");
-});
-</script>
-
 </section>
 
 </body>
