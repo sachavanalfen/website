@@ -23,30 +23,21 @@
     <div class="container-index">
       <a href="filtering.html">
         <h2>Sacha van Alfen<p1>Work</p1></h2></a>
-<!-- <div class="name">
-        <a href="filtering.html">
-          <h2>Sacha van Alfen</h2></a></div>
 
-<div class="work">
-        <a href="filtering.html">
-          <p1>Work</p1></a></div> -->
 
-<!-- <div class="S1"><p>S</p></div>
-<div class="S2"><p>V</p></div>
-<div class="S3"><p>A</p></div> -->
+<div class="random-pane">
 
-<!-- <div class="random-pane"> -->
-
-      <div class="random-item">
-        <p>S</p>
+      <div class="random-item" style="background-color:peachpuff;">
+        <img src="img crop/img22.jpg"/>
       </div>
-      <div class="random-item">
-        <p>V</p>
+      <div class="random-item" style="background-color:pink;">
+        <img src="img crop/img22.jpg"/>
       </div>
-      <div class="random-item">
-        <p>A</p>
+      <div class="random-item" style="background-color:powderblue;">
+        <img src="img crop/img22.jpg"/>
       </div>
-  <!-- </div> -->
+
+  </div>
 
   <!-- <div class="grid">
 
@@ -223,11 +214,11 @@ window.onload = function() {
 responsiveSlider();
 }
 
-var pane_width = $(".container-index").width() - $(".random-item").width();
-var pane_height = $(".container-index").height() - $(".random-item").height();
+var pane_width = $(".random-pane").width() - $(".random-item").width();
+var pane_height = $(".random-pane").height() - $(".random-item").height();
 
 // loop through all the items in the random-pane
-$(".container-index").children().each( function(){
+$(".random-pane").children().each( function(){
 
   // get a random x position
   var x = Math.round(Math.random() * pane_width);
