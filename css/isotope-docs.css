@@ -395,7 +395,7 @@ display: inline;
   /* border-bottom: 1px solid black; */
   padding-bottom:10px;
   font-size: 16px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .about{
   /* column-count: 3; */
