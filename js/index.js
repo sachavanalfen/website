@@ -24,29 +24,100 @@ $(".random-pane").children().each( function(){
 
 // SLIDING DOOR
 
-
-$(".sliding-panel").click(function(){
-  if ( $(this).hasClass("isOpen") ) {
-    $(this).animate({
-      right: '-300px'
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $(".sliding-panel").click(function(){
+      if ( $(this).hasClass("isOpen") ) {
+        $(this).animate({
+          right: '-34%'
+        });
+      } else {
+        $(this).animate({
+          right: '0'
+        });
+      }
+      $(this).toggleClass("isOpen");
     });
-  } else {
-    $(this).animate({
-      right: '0'
+
+    $(".about-menu").click(function(){
+      if ( $(".sliding-panel").hasClass("isOpen") ) {
+        $(".sliding-panel").animate({
+          right: '-34%'
+        });
+      } else {
+        $(".sliding-panel").animate({
+          right: '0'
+        });
+      }
+      $(".sliding-panel").toggleClass("isOpen");
     });
   }
-  $(this).toggleClass("isOpen");
-});
-
-$(".about-menu").click(function(){
-  if ( $(".sliding-panel").hasClass("isOpen") ) {
-    $(".sliding-panel").animate({
-      right: '-300px'
+  else {
+    $(".sliding-panel").click(function(){
+      if ( $(this).hasClass("isOpen") ) {
+        $(this).animate({
+          right: '-300px'
+        });
+      } else {
+        $(this).animate({
+          right: '0'
+        });
+      }
+      $(this).toggleClass("isOpen");
     });
-  } else {
-    $(".sliding-panel").animate({
-      right: '0'
+
+    $(".about-menu").click(function(){
+      if ( $(".sliding-panel").hasClass("isOpen") ) {
+        $(".sliding-panel").animate({
+          right: '-300px'
+        });
+      } else {
+        $(".sliding-panel").animate({
+          right: '0'
+        });
+      }
+      $(".sliding-panel").toggleClass("isOpen");
     });
   }
-  $(".sliding-panel").toggleClass("isOpen");
-});
+}
+
+var x = window.matchMedia("(min-width: 1024px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+
+// function myFunction(h) {
+//   if (h.matches) {
+//     $(".sliding-panel").click(function(){
+//       if ( $(this).hasClass("isOpen") ) {
+//         $(this).animate({
+//           right: '-50%'
+//         });
+//       } else {
+//         $(this).animate({
+//           right: '0'
+//         });
+//       }
+//       $(this).toggleClass("isOpen");
+//     });
+//
+//     $(".about-menu").click(function(){
+//       if ( $(".sliding-panel").hasClass("isOpen") ) {
+//         $(".sliding-panel").animate({
+//           right: '-50%'
+//         });
+//       } else {
+//         $(".sliding-panel").animate({
+//           right: '0'
+//         });
+//       }
+//       $(".sliding-panel").toggleClass("isOpen");
+//     });
+//   }
+// }
+//
+// var h = window.matchMedia("(min-width: 600px)")
+// myFunction(h)
+// h.addListener(myFunction)
