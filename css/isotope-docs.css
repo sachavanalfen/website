@@ -200,6 +200,7 @@ text-decoration: underline;
   display: block;
   max-width: 100%;
   border: 5px solid white;
+  height:auto;
 }
 @media screen and (max-width: 414px) {
   .grid-item2 img {
