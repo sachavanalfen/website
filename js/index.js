@@ -22,6 +22,49 @@ $(".random-pane").children().each( function(){
 
 });
 
+
+// RANDOM IMAGE ON REFRESH
+
+var list = ["img work/bio3.0.jpg",
+            "img work/color.jpg",
+            "img work/color4.jpg",
+            "img crop/CB6.jpg"];
+
+var index = Math.floor( Math.random() * list.length );
+
+var image_url = list[index];
+
+// RANDOM IMAGE ON REFRESH
+
+$("#random-image").attr("src",image_url);
+
+var list = ["img work/bio3.jpg",
+            "img work/color2.jpg",
+            "img work/color3.jpg",
+            "img work/burger2.1.jpg"];
+
+var index = Math.floor( Math.random() * list.length );
+
+var image_url = list[index];
+
+$("#random-image2").attr("src",image_url);
+
+// RANDOM IMAGE ON REFRESH
+
+var list = ["img work/bio3.0.jpg",
+            "img work/bio3.jpg",
+            "img work/CB.jpg",
+            "img work/color4.jpg",
+            "img work/LS7.jpg"];
+
+var index = Math.floor( Math.random() * list.length );
+
+var image_url = list[index];
+
+$("#random-image3").attr("src",image_url);
+
+
+
 // SLIDING DOOR
 
 function myFunction(x) {

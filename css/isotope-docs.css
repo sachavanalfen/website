@@ -183,6 +183,7 @@ text-decoration: underline;
 .grid-sizer2,
 .grid-item2 {
   width: 50%;
+  display:block;
 }
 .grid-item2 {
   float: left;
@@ -733,8 +734,6 @@ padding-bottom:5px;
 
 #slider {
   position: relative;
-  /* width: calc(100vw - 16px); */
-  width: 75vw;
   height: auto;
 
   overflow: hidden;
@@ -743,7 +742,7 @@ padding-bottom:5px;
   position: relative;
   list-style: none;
   height: 100%;
-  width: 10000%;
+  /* width: 10000%; */
   padding: 0;
   margin: 0;
   transition: all 750ms ease;
@@ -758,8 +757,8 @@ padding-bottom:5px;
 }
 #slider ul li img{
   /* width: calc(100vw - 16px); */
-  width: 75vw;
-  height: 100%;
+  height: calc(100vh - 40px);
+  object-fit: cover;
   /* object-fit: contain; */
   background: black
 }
@@ -796,6 +795,7 @@ padding-bottom:5px;
   vertical-align: top;
   height: calc(100vh - 95px);
   top: 50px;
+  width: calc(100vw - 8px);
 }
 .random-item {
   position: absolute;
@@ -814,6 +814,52 @@ padding-bottom:5px;
   height: 200px;
   object-fit: cover;
 }
+
+
+/* 3 COLUMNS */
+
+.index-column {
+	  flex: 33.33%;
+	  height: calc(100vh - 40px);
+	  /* background-color: #cccccc; */
+	  text-align: center;
+    object-fit: cover;
+	}
+  .index-column img{
+  	  object-fit: cover;
+      flex: 33.33%;
+  	  height: calc(100vh - 40px);
+      width:100%;
+      top:0;
+  	}
+    #random-image {
+      object-fit: cover;
+      flex: 33.33%;
+  	  height: calc(100vh - 40px);
+      width:100%;
+      top:0;
+}
+	.index-container {
+	   display: flex;
+	}
+
+  @media only screen and (min-width: 850px){
+    .index-column {
+    	  height: calc(20vh);
+    	}
+      .index-column img{
+      	  height: calc(20vh);
+          margin-top:74vh;
+      	}
+        #random-image {
+      	  height: calc(20vh);
+          margin-top:74vh;
+    }
+    .index-container {
+       height: calc(100vh - 40px);
+    }
+}
+
 /* .random-item p{
 margin:0;
 } */
@@ -944,8 +990,6 @@ margin:0;
 .content-container{
   grid-area: main;
 }
-
-
 
 @media only screen and (min-width: 1050px){
 #content-wrap{
