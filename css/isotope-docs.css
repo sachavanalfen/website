@@ -180,8 +180,7 @@ text-decoration: underline;
 .grid-sizer2,
 .grid-item2 {
   width: 50%;
-  display:block;
-  height:auto;
+
 }
 .grid-item2 {
   float: left;
@@ -196,10 +195,10 @@ text-decoration: underline;
   border: 5px solid white;
 }
 .grid-item2 video {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   border: 5px solid white;
-  height:100%;
+  height:auto;
 }
 @media screen and (max-width: 414px) {
   .grid-item2 img {
