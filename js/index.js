@@ -25,10 +25,13 @@ $(".random-pane").children().each( function(){
 
 // RANDOM IMAGE ON REFRESH
 
-var list = ["img work/bio3.0.jpg",
+var list = [
+            // "img work/bio3.0.jpg",
+            // "img crop/CB6.jpg",
+            "img work/color1..jpg",
+            "img work/techweek01.jpg",
             "img work/color.jpg",
-            "img work/color4.jpg",
-            "img crop/CB6.jpg"];
+            "img work/color4.jpg",];
 
 var index = Math.floor( Math.random() * list.length );
 
@@ -38,10 +41,11 @@ var image_url = list[index];
 
 $("#random-image").attr("src",image_url);
 
-var list = ["img work/bio3.jpg",
+var list = [
+            "img work/color1.2.jpg",
             "img work/color2.jpg",
             "img work/color3.jpg",
-            "img work/burger2.1.jpg"];
+            "img work/color4.jpg"];
 
 var index = Math.floor( Math.random() * list.length );
 
@@ -51,11 +55,13 @@ $("#random-image2").attr("src",image_url);
 
 // RANDOM IMAGE ON REFRESH
 
-var list = ["img work/bio3.0.jpg",
-            "img work/bio3.jpg",
-            "img work/CB.jpg",
-            "img work/color4.jpg",
-            "img work/LS7.jpg"];
+var list = [
+            // "img work/stamp3.jpg",
+            // "img work/Fibbo9.jpg",
+            // "img work/bio3.jpg",
+            "img work/techweek02.jpg",
+            "img work/color.jpg",
+            "img work/color4.jpg"];
 
 var index = Math.floor( Math.random() * list.length );
 
