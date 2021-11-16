@@ -181,6 +181,7 @@ text-decoration: underline;
 .grid-item2 {
   width: 50%;
   display:block;
+  height:auto;
 }
 .grid-item2 {
   float: left;
