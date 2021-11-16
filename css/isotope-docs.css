@@ -379,6 +379,7 @@ a > li > i{
   right:8px;
   position: absolute;
   z-index:2 !important;
+  cursor: pointer;
 }
 .about-menu p2:hover{
 text-decoration: underline;
