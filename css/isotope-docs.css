@@ -196,7 +196,7 @@ text-decoration: underline;
   border: 5px solid white;
 }
 .grid-item2 video {
-  display: block;
+  display: inline-block;
   max-width: 100%;
   border: 5px solid white;
   height:auto;
@@ -552,7 +552,7 @@ float:right;
 .text {
 /* padding-top:5px; */
 padding-left:5px;
-padding-right:10px;
+padding-right:5px;
 color: rgba(0, 0, 0, 0.2);
 font-size: 12px;
 padding-bottom:5px;
